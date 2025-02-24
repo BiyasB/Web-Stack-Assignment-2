@@ -17,22 +17,32 @@
         .footer-custom {
             background-color: #d0c4e8 !important;
         }
-
-        .history-section, .corporate_leadership-section {
-            margin: 40px 0;
-            padding: 30px 0;
+        .reservation-card {
+            background-color: #fdc12f;
+            padding: 15px;
+            font-size:x-large;
+            font-weight:500;
         }
+
+         .content-container {
+            background: #f8f9fa;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        
     </style>
 </head>
 
 <body>
-    
-    <nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top">
+
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top" style="background-color: #5133a5;">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
+            <a class="navbar-brand" href="#"> <img src="05_images-and-media-additional-resources_img/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="Logo"> </a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"><a class="nav-link" href="./index.html"><i class="fa fa-home"></i> Home</a></li>
@@ -44,7 +54,7 @@
         </div>
     </nav>
 
-    
+
     <header class="jumbotron jumbotron-fluid header-custom text-white">
         <div class="container">
             <div class="row">
@@ -52,91 +62,148 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the world's best cuisines and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm-6 text-center align-self-center">
-                    <a href="#reservation" class="btn btn-warning btn-lg btn-block">Reserve Table</a>
+                <div class="media">
+                    <img class="mr-3" src="05_images-and-media-additional-resources_img/img/logo.png" alt="Logo">
+                    <div class="media-body"> </div>
+                    <div class="col-12 col-sm-6 text-center align-self-center">
+                        <a href="#reservation" class="btn btn-warning btn-lg btn-block">Reserve Table</a>
+                    </div>
                 </div>
+
             </div>
         </div>
+
     </header>
 
-    
+
     <div class="container">
         <div class="row row-content">
-            <div class="col-12 col-sm-6 offset-sm-1">
-                <div class="media">
-                    <img class="mr-3" src="05_images-and-media-additional-resources_img\img\uthappizza.png" alt="Uthappizza">
-                    <div class="media-body">
-                        <h4 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-secondary">$4.99</span></h4>
-                        <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe cherry tomatoes, Vidalia onion, Guntur chillies, and Buffalo Paneer.</p>
-                    </div>
-                </div>
+            <!-- Small screen heading -->
+            <div class="col-12 d-block d-sm-none text-left mb-4">
+                <h4>Our Lipsmacking<br>Culinary Creations</h4>
             </div>
-        </div>
 
-        <div class="row row-content">
+            <!-- Uthappizza Content -->
             <div class="col-12 col-sm-6 offset-sm-1">
                 <div class="media">
+                    <img class="mr-3" src="05_images-and-media-additional-resources_img/img/uthappizza.png" alt="Uthappizza">
                     <div class="media-body">
                         <h4 class="mt-0">
-                            Weekend Grand Buffet
-                            <span class="badge badge-danger">NEW</span>
+                            Uthappizza
+                            <span class="badge badge-danger d-btn-block d-sm-inline">HOT</span>
+                            <span class="badge badge-secondary d-btn-block d-sm-inline">$4.99</span>
                         </h4>
-                        <p>
-                            Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person.
+                        <p class="d-none d-sm-block">
+                            A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe cherry tomatoes, Vidalia onion, Guntur chillies, and Buffalo Paneer.
                         </p>
                     </div>
-                    <img class="ml-3 img-fluid" src="05_images-and-media-additional-resources_img/img/buffet.png" alt="Weekend Grand Buffet Image">
+                </div>
+            </div>
+
+            <!-- Right side heading for large screens) -->
+            <div class="col-12 col-sm-4 text-right d-none d-sm-block align-self-center">
+                <h4>Our<br>Lipsmacking<br>Culinary<br>Creations</h4>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="row row-content">
+        <div class="col-12 d-block d-sm-none ">
+            <h4>This Month's<br>Promotions</h4>
+        </div>
+        <div class="col-12 col-sm-6 offset-sm-1">
+            <div class="media">
+                <div class="col-12 col-sm-4 text-left d-none d-sm-block align-self-center">
+                    <h4>This Month's<br>Promotions</h4>
+                </div>
+                <div class="media-body">
+                    <h4 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h4>
+                    <p class="d-none d-sm-block">
+                        Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person.
+                    </p>
+                </div>
+                <img class="ml-3 img-fluid" src="05_images-and-media-additional-resources_img/img/buffet.png" alt="Weekend Grand Buffet Image">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row row-content">
+        <!-- Small screen heading -->
+        <div class="col-12 d-block d-sm-none text-left mb-4">
+            <h4>Meet our Culinary <br> Specialists </h4>
+        </div>
+
+        <div class="col-12 col-sm-6 offset-sm-1">
+            <div class="media">
+                <img class="mr-3" src="05_images-and-media-additional-resources_img/img/alberto.jpg" alt="Alberto" width="120" height="120">
+                <div class="media-body">
+                    <h4 class="mt-0">
+                        Alberto Somayya
+                    </h4>
+                    <h5> Executive Chef </h5>
+                    <p class="d-none d-sm-block">
+                        Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.
+                    </p>
                 </div>
             </div>
         </div>
-    
-        
 
-        
-        <div class="row row-content" id="reservation">
-            <div class="col-12 col-sm-8 offset-sm-2">
-                <div class="card">
-                    <div class="card-header">Reserve a Table</div>
-                    <div class="card-body">
-                        <form>
-                            <div class="form-group">
-                                <label>Number of Guests</label>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="guests" id="guest1" value="1">
-                                    <label class="form-check-label" for="guest1">1</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="guests" id="guest2" value="2">
-                                    <label class="form-check-label" for="guest2">2</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="guests" id="guest3" value="3">
-                                    <label class="form-check-label" for="guest2">3</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="guests" id="guest4" value="4">
-                                    <label class="form-check-label" for="guest2">4</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="guests" id="guest5" value="5">
-                                    <label class="form-check-label" for="guest2">5</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="guests" id="guest6" value="6">
-                                    <label class="form-check-label" for="guest2">6</label>
-                                </div>
+        <!-- Right side heading for large screens -->
+        <div class="col-12 col-sm-4 text-right d-none d-sm-block align-self-center">
+            <h4>Meet our <br>Culinary <br> Specialists </h4>
+        </div>
+    </div>
+    
+
+
+
+    <div class="row row-content" id="reservation">
+        <div class="col-12 col-sm-8 offset-sm-2">
+            <div class="card">
+                <div class="card-header reservation-card text-white">Reserve a Table </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label>Number of Guests</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="guests" id="guest1" value="1">
+                                <label class="form-check-label" for="guest1">1</label>
                             </div>
-                            <div class="form-group">
-                                <label for="reservationDate">Date</label>
-                                <input type="date" class="form-control" id="reservationDate">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="guests" id="guest2" value="2">
+                                <label class="form-check-label" for="guest2">2</label>
                             </div>
-                            <div class="form-group">
-                                <label for="reservationTime">Time</label>
-                                <input type="time" class="form-control" id="reservationTime">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="guests" id="guest3" value="3">
+                                <label class="form-check-label" for="guest2">3</label>
                             </div>
-                            <button type="submit" class="btn btn-primary">Reserve</button>
-                        </form>
-                    </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="guests" id="guest4" value="4">
+                                <label class="form-check-label" for="guest2">4</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="guests" id="guest5" value="5">
+                                <label class="form-check-label" for="guest2">5</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="guests" id="guest6" value="6">
+                                <label class="form-check-label" for="guest2">6</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="reservationDate">Date</label>
+                            <input type="date" class="form-control" id="reservationDate">
+                        </div>
+                        <div class="form-group">
+                            <label for="reservationTime">Time</label>
+                            <input type="time" class="form-control" id="reservationTime">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Reserve</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -146,7 +213,8 @@
 
 
 
-   
+
+
     <footer class="footer footer-custom text-black py-4">
         <div class="container">
             <div class="row">
@@ -177,7 +245,7 @@
         </div>
     </footer>
 
-    
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
