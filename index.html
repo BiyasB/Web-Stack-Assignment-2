@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ristorante Con Fusion: Home</title>
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .header-custom {
+            background-color: #9675ce !important;
+        }
+
+        .footer-custom {
+            background-color: #d0c4e8 !important;
+        }
+
+        .history-section, .corporate_leadership-section {
+            margin: 40px 0;
+            padding: 30px 0;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="./index.html"><i class="fa fa-home"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><i class="fa fa-info"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list"></i> Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-address-card"></i> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <header class="jumbotron jumbotron-fluid header-custom text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <h1>Ristorante con Fusion</h1>
+                    <p>We take inspiration from the world's best cuisines and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                </div>
+                <div class="col-12 col-sm-6 text-center align-self-center">
+                    <a href="#reservation" class="btn btn-primary btn-lg btn-block">Reserve Table</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+    <div class="container">
+        <div class="row row-content">
+            <div class="col-12 col-sm-4 offset-sm-1">
+                <div class="media">
+                    <img class="mr-3" src="05_images-and-media-additional-resources_img\img\uthappizza.png" alt="Uthappizza">
+                    <div class="media-body">
+                        <h4 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-secondary">$4.99</span></h4>
+                        <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe cherry tomatoes, Vidalia onion, Guntur chillies, and Buffalo Paneer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="col-12 col-sm-6 offset-sm-1">
+            <div class="media">
+                <div class="media-body">
+                    <h4 class="mt-0">
+                        Weekend Grand Buffet
+                        <span class="badge badge-danger">NEW</span>
+                    </h4>
+                    <p>
+                        Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person.
+                    </p>
+                </div>
+                <img class="ml-3 img-fluid" src="05_images-and-media-additional-resources_img/img/buffet.png" alt="Weekend Grand Buffet Image">
+            </div>
+        </div>
+    </div>
+
+        
+        <div class="row row-content" id="reservation">
+            <div class="col-12 col-sm-8 offset-sm-2">
+                <div class="card">
+                    <div class="card-header">Reserve a Table</div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label>Number of Guests</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="guests" id="guest1" value="1">
+                                    <label class="form-check-label" for="guest1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="guests" id="guest2" value="2">
+                                    <label class="form-check-label" for="guest2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="guests" id="guest3" value="3">
+                                    <label class="form-check-label" for="guest2">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="guests" id="guest4" value="4">
+                                    <label class="form-check-label" for="guest2">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="guests" id="guest5" value="5">
+                                    <label class="form-check-label" for="guest2">5</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="guests" id="guest6" value="6">
+                                    <label class="form-check-label" for="guest2">6</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="reservationDate">Date</label>
+                                <input type="date" class="form-control" id="reservationDate">
+                            </div>
+                            <div class="form-group">
+                                <label for="reservationTime">Time</label>
+                                <input type="time" class="form-control" id="reservationTime">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Reserve</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+   
+    <footer class="footer footer-custom text-black py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+                        121, Clear Water Bay Road, Kowloon, HONG KONG<br>
+                        Tel.: +852 1234 5678<br>
+                        Fax: +852 8765 4321<br>
+                        Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
+                    </address>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p>© Copyright 2018 Ristorante Con Fusion</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
